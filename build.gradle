@@ -1,0 +1,45 @@
+plugins {
+    id 'application'
+    id 'java'
+    id'io.qameta.allure' version '2.11.2'
+}
+
+group 'ey.org'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.28'
+    implementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    implementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation group: 'com.microsoft.playwright', name: 'playwright', version: '1.36.0'
+    implementation 'com.deque.html.axe-core:playwright:4.7.0'
+
+
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+application {
+    mainClass.set("com.microsoft.playwright.CLI")
+}
+test {
+    useJUnitPlatform()
+}
+
+
+//Then run this in terminal:
+//./gradlew run --args="install"
+//
+//and then run this:
+//./gradlew run --args="install-deps"
+//
+//Finally, run this command:
+//./gradlew run --args="open playwright.dev"
+//./gradlew run --args="show-trace testWhetherAmazonIsDisplayed.zip"
