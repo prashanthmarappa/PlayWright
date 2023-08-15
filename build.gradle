@@ -1,33 +1,45 @@
 plugins {
+    id 'application'
     id 'java'
-    id 'eclipse'
-    id 'idea'
-    id 'org.springframework.boot' version '2.7.14'
-    id 'io.spring.dependency-management' version '1.1.0'
+    id'io.qameta.allure' version '2.11.2'
 }
 
-group 'org.example'
+group 'ey.org'
 version '1.0-SNAPSHOT'
-//apply plugin: 'io.spring.dependency-management'
-sourceCompatibility = '11'
+
 repositories {
     mavenCentral()
 }
-springBoot {
-    mainClass = 'com.stepDefinition.LoginSteps'
-}
+
+
 dependencies {
-//    testImplementation 'org.springframework.boot:spring-boot-test:2.7.14'
-
+    implementation 'org.projectlombok:lombok:1.18.28'
+    implementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    implementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
     implementation group: 'com.microsoft.playwright', name: 'playwright', version: '1.36.0'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'io.cucumber:cucumber-java:7.13.0'
-    implementation 'io.cucumber:cucumber-spring:7.13.0'
+    implementation 'com.deque.html.axe-core:playwright:4.7.0'
 
 
 }
-
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+}
+application {
+    mainClass.set("com.microsoft.playwright.CLI")
+}
 test {
     useJUnitPlatform()
 }
+
+
+//Then run this in terminal:
+//./gradlew run --args="install"
+//
+//and then run this:
+//./gradlew run --args="install-deps"
+//
+//Finally, run this command:
+//./gradlew run --args="open playwright.dev"
+//./gradlew run --args="show-trace testWhetherAmazonIsDisplayed.zip"

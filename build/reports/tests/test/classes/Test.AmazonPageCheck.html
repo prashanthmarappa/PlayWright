@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AmazonPageCheck</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AmazonPageCheck</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/Test.html">Test</a> &gt; AmazonPageCheck</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5m20.41s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="accessbilityTesting()"></a>
+<h3 class="failures">accessbilityTesting()</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;[]&gt; but was: &lt;[Rule{id='aria-allowed-attr', description='Ensures ARIA attributes are allowed for an element's role', help='Elements must only use allowed ARIA attributes', helpUrl='https://dequeuniversity.com/rules/axe/4.7/aria-allowed-attr?application=PlaywrightJava', impact='serious', tags=[cat.aria, wcag2a, wcag412], nodes=[CheckedNode{target='[.creative-container]', html='&lt;div class=&quot;creative-container&quot; dir=&quot;ltr&quot; style=&quot;overflow:hidden;position:relative&quot; aria-label=&quot;Sponsored Ad&quot; data-reactroot=&quot;&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  aria-label attribute cannot be used on a div with no valid role attribute.', any='[]', all='[]', none='[CheckedNode{id='aria-prohibited-attr', impact='serious', message='aria-label attribute cannot be used on a div with no valid role attribute.', data='{role=null, nodeName=div, messageKey=noRoleSingular, prohibited=[aria-label]}', relatedNodes='[]'}]'}, CheckedNode{target='[#ape_Gateway_desktop-ad-center-1_desktop_iframe, .creative-container]', html='&lt;div class=&quot;creative-container&quot; style=&quot;position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden&quot; aria-label=&quot;Sponsored Ad&quot; data-reactroot=&quot;&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  aria-label attribute cannot be used on a div with no valid role attribute.', any='[]', all='[]', none='[CheckedNode{id='aria-prohibited-attr', impact='serious', message='aria-label attribute cannot be used on a div with no valid role attribute.', data='{role=null, nodeName=div, messageKey=noRoleSingular, prohibited=[aria-label]}', relatedNodes='[]'}]'}, CheckedNode{target='[#ape_Gateway_right-7_desktop_iframe, .creative-container]', html='&lt;div class=&quot;creative-container&quot; style=&quot;position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden&quot; aria-label=&quot;Sponsored Ad&quot; data-reactroot=&quot;&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  aria-label attribute cannot be used on a div with no valid role attribute.', any='[]', all='[]', none='[CheckedNode{id='aria-prohibited-attr', impact='serious', message='aria-label attribute cannot be used on a div with no valid role attribute.', data='{role=null, nodeName=div, messageKey=noRoleSingular, prohibited=[aria-label]}', relatedNodes='[]'}]'}], url='null', createdDate='null'}, Rule{id='frame-title', description='Ensures &lt;iframe&gt; and &lt;frame&gt; elements have an accessible name', help='Frames must have an accessible name', helpUrl='https://dequeuniversity.com/rules/axe/4.7/frame-title?application=PlaywrightJava', impact='serious', tags=[cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.c], nodes=[CheckedNode{target='[#ape_Gateway_desktop-ad-center-1_desktop_iframe]', html='&lt;iframe name=&quot;{&amp;quot;slot&amp;quot;:&amp;quot;Gateway_desktop-ad-center-1_desktop&amp;quot;,&amp;quot;pageType&amp;quot;:&amp;quot;Gateway&amp;quot;,&amp;quot;subPageType&amp;quot;:&amp;quot;desktop&amp;quot;,&amp;quot;slotName&amp;quot;:&amp;quot;desktop-ad-center-1&amp;quot;,&amp;quot;src&amp;quot;:&amp;quot;https://aax-us-east-retail-direct.amazon.com/e/xsp/getAd?placementId=73950e1c-6f66-4784-b2d9-e5d5693a4353&amp;amp;src=500&amp;amp;slot=desktop-ad-center-1&amp;amp;rid=01015e9742e8d0c09b739c00fd1a36a18a677aa0525604401f0350195e85c57c816b&amp;amp;rj=%7B%7D&amp;quot;,&amp;quot;adServer&amp;quot;:&amp;quot;cs&amp;quot;,&amp;quot;arid&amp;quot;:&amp;quot;cba251ed6ab64f819795ff8193d3284b&amp;quot;,&amp;quot;placementId&amp;quot;:&amp;quot;73950e1c-6f66-4784-b2d9-e5d5693a4353&amp;quot;,&amp;quot;size&amp;quot;:{&amp;quot;width&amp;quot;:&amp;quot;970&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;250&amp;quot;},&amp;quot;allowedSizes&amp;quot;:[{&amp;quot;width&amp;quot;:&amp;quot;970px&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;250px&amp;quot;},{&amp;quot;width&amp;quot;:&amp;quot;970&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;250&amp;quot;}],&amp;quot;allowChangeSize&amp;quot;:false,&amp;quot;allowedDomains&amp;quot;:[&amp;quot;g-ecx.images-amazon.com&amp;quot;,&amp;quot;d3l3lkinz3f56t.cloudfront.net&amp;quot;,&amp;quot;g-ecx.images-amazon.com&amp;quot;,&amp;quot;z-ecx.images-amazon.com&amp;quot;,&amp;quot;images-na.ssl-images-amazon.com&amp;quot;,&amp;quot;g-ec4.images-amazon.com&amp;quot;,&amp;quot;images-cn.ssl-images-amazon.com&amp;quot;],&amp;quot;loadAfter&amp;quot;:&amp;quot;amznJQ.onCompletion:amznJQ.x1:x1&amp;quot;,&amp;quot;firePixelsAfter&amp;quot;:&amp;quot;immediate&amp;quot;,&amp;quot;extraDelay&amp;quot;:0,&amp;quot;iframeExtraStyle&amp;quot;:&amp;quot;max-width:100%;max-height:100%;&amp;quot;,&amp;quot;iframeClass&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isCardsFlow&amp;quot;:false,&amp;quot;adPixels&amp;quot;:[],&amp;quot;aaxInstrPixelUrl&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;serverSideFetchAd&amp;quot;:&amp;quot;false&amp;quot;,&amp;quot;enableAdBlockerDetector&amp;quot;:false,&amp;quot;disableResizeFunc&amp;quot;:true,&amp;quot;minWidthToScale&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;fallbackStaticAdImgUrl&amp;quot;:&amp;quot;https://m.media-amazon.com/images/G/01/GiftCards/Consumer/multi-product/House/2022_fallback_HouseAds_1940x500_EN.jpg&amp;quot;,&amp;quot;fallbackStaticAdClickUrl&amp;quot;:&amp;quot;https://www.amazon.com/b/?node=2973106011&amp;quot;,&amp;quot;fallbackStaticAdExtraStyle&amp;quot;:&amp;quot;width=100% height=auto alt=\&amp;quot;GiftCards/Consumer/multi-product/House/2022_fallback_HouseAds_1940x500_EN\&amp;quot;&amp;quot;,&amp;quot;adFeedbackInfo&amp;quot;:{&amp;quot;adProgramId&amp;quot;:&amp;quot;1001&amp;quot;,&amp;quot;endPoint&amp;quot;:&amp;quot;/af/feedback-link&amp;quot;,&amp;quot;boolFeedback&amp;quot;:true,&amp;quot;sponsoredText&amp;quot;:&amp;quot;U3BvbnNvcmVkIDxiIGlkPSJhcGVfR2F0ZXdheV9kZXNrdG9wLWFkLWNlbnRlci0xX2Rlc2t0b3BfZmVlZGJhY2tJY29uIiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyB2ZXJ0aWNhbC1hbGlnbjogdGV4dC1ib3R0b207IG1hcmdpbjogMXB4IDBweDsgd2lkdGg6IDE0cHg7IGhlaWdodDogMTJweDsgYmFja2dyb3VuZDogdXJsKCdodHRwczovL20ubWVkaWEtYW1hem9uLmNvbS9pbWFnZXMvRy8wMS9hZC1mZWVkYmFjay9pbmZvX2ljb25fMVhzcHJpdGUucG5nJykgMHB4IDBweCBuby1yZXBlYXQgc2Nyb2xsIHRyYW5zcGFyZW50OyIvPg==&amp;quot;,&amp;quot;adFeedbackOnTop&amp;quot;:false},&amp;quot;adPlacementMetaData&amp;quot;:{&amp;quot;pageUrl&amp;quot;:&amp;quot;aHR0cHM6Ly93d3cuYW1hem9uLmNvbS8/&amp;quot;,&amp;quot;adElementId&amp;quot;:&amp;quot;ape_Gateway_desktop-ad-center-1_desktop_placement&amp;quot;,&amp;quot;pageType&amp;quot;:&amp;quot;Gateway&amp;quot;,&amp;quot;slotName&amp;quot;:&amp;quot;desktop-ad-center-1&amp;quot;},&amp;quot;adCreativeMetaData&amp;quot;:{&amp;quot;adProgramId&amp;quot;:&amp;quot;1001&amp;quot;,&amp;quot;adCreativeId&amp;quot;:&amp;quot;584355892588353399&amp;quot;,&amp;quot;adId&amp;quot;:&amp;quot;577430154754422527&amp;quot;,&amp;quot;adCreativeDetails&amp;quot;:[{&amp;quot;version&amp;quot;:1,&amp;quot;advertiserIdNS&amp;quot;:&amp;quot;cs.A030503913LWCURF2HHR0&amp;quot;,&amp;quot;campaignIdNS&amp;quot;:&amp;quot;cs.A094848820V4UJAPT3PEK&amp;quot;,&amp;quot;selectionSignals&amp;quot;:{&amp;quot;context&amp;quot;:true,&amp;quot;location&amp;quot;:true,&amp;quot;pastActivity&amp;quot;:&amp;quot;AMAZON_AND_OTHER&amp;quot;}}],&amp;quot;adNetwork&amp;quot;:&amp;quot;cs&amp;quot;},&amp;quot;advertisementStyle&amp;quot;:{&amp;quot;position&amp;quot;:&amp;quot;absolute&amp;quot;,&amp;quot;top&amp;quot;:&amp;quot;4.5px&amp;quot;,&amp;quot;right&amp;quot;:&amp;quot;0px&amp;quot;,&amp;quot;display&amp;quot;:&amp;quot;inline-block&amp;quot;,&amp;quot;font&amp;quot;:&amp;quot;11px \&amp;quot;Amazon Ember Regular\&amp;quot;, \&amp;quot;Amazon Ember\&amp;quot;, Arial&amp;quot;,&amp;quot;color&amp;quot;:&amp;quot;rgb(85,85,85)&amp;quot;,&amp;quot;text-align&amp;quot;:&amp;quot;right&amp;quot;},&amp;quot;feedbackDivStyle&amp;quot;:{&amp;quot;position&amp;quot;:&amp;quot;relative&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;17px&amp;quot;,&amp;quot;top&amp;quot;:&amp;quot;0px&amp;quot;},&amp;quot;viewabilityStandards&amp;quot;:[{&amp;quot;p&amp;quot;:0,&amp;quot;t&amp;quot;:0,&amp;quot;def&amp;quot;:&amp;quot;amzn&amp;quot;},{&amp;quot;p&amp;quot;:30,&amp;quot;t&amp;quot;:1,&amp;quot;def&amp;quot;:&amp;quot;iab&amp;quot;},{&amp;quot;p&amp;quot;:100,&amp;quot;t&amp;quot;:1,&amp;quot;def&amp;quot;:&amp;quot;groupm&amp;quot;}],&amp;quot;ajaxWeblabTriggerId&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;abpStatus&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;abpAcceptable&amp;quot;:&amp;quot;true&amp;quot;,&amp;quot;disableAdReporterSlot&amp;quot;:&amp;quot;false&amp;quot;,&amp;quot;mediaType&amp;quot;:&amp;quot;D&amp;quot;,&amp;quot;allowlistedCustomMessageEvents&amp;quot;:[&amp;quot;openPsAdPopover&amp;quot;,&amp;quot;openATCModal&amp;quot;,&amp;quot;setPartner&amp;quot;,&amp;quot;sendMetrics&amp;quot;,&amp;quot;wrap&amp;quot;],&amp;quot;allowlistedQueryParamKeys&amp;quot;:[&amp;quot;sf-overrideVariationId&amp;quot;,&amp;quot;sf-overridePredictorId&amp;quot;,&amp;quot;sf-forceFailure&amp;quot;],&amp;quot;DAsfUrl&amp;quot;:&amp;quot;https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.8f4f9653.js&amp;quot;,&amp;quot;weblabTreatments&amp;quot;:{&amp;quot;ADPT_SF_ARIA_HIDDEN_644521&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_CLIENT_LATENCY_2023Q1_632539&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_CLIENT_LATENCY_2023Q3_737747&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_DSA_ENABLE_AD_FEEDBACK_712406&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_EXPANDABLE_ADS_716745&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_JAVELIN_BID_PRESENT_PUNTING_747631&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_JAVELIN_DSA_PUNTING_713928&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_MRC_RETEST_643771&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_DOCWRITE_689243&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_TRANSPARENCY_INFO_MANDATORY_FOR_EU_712921&amp;quot;:&amp;quot;C&amp;quot;},&amp;quot;hostDomain&amp;quot;:&amp;quot;https://www.amazon.com&amp;quot;,&amp;quot;userAgent&amp;quot;:&amp;quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36&amp;quot;,&amp;quot;isAUIAvailable&amp;quot;:&amp;quot;3.23.1-2023-08-11&amp;quot;,&amp;quot;cookie&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;aPageStart&amp;quot;:1692084838556,&amp;quot;adStartTime&amp;quot;:1692084840565,&amp;quot;queryParams&amp;quot;:{},&amp;quot;userConnectionInfo&amp;quot;:{&amp;quot;mobileConnectionType&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;connectionType&amp;quot;:&amp;quot;4g&amp;quot;},&amp;quot;safeFrameSrc&amp;quot;:&amp;quot;https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/sf-1.50.293ce66e.html&amp;quot;}&quot; id=&quot;ape_Gateway_desktop-ad-center-1_desktop_iframe&quot; height=&quot;250px&quot; width=&quot;970px&quot; class=&quot;&quot; frameborder=&quot;0&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;no&quot; allowtransparency=&quot;true&quot; data-arid=&quot;cba251ed6ab64f819795ff8193d3284b&quot; src=&quot;https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/sf-1.50.293ce66e.html&quot; sandbox=&quot;allow-scripts allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-same-origin&quot; style=&quot;max-width: 100%; max-height: 100%;&quot;&gt;', impact='serious', failureSummary='Fix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', any='[CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='presentational-role', impact='minor', message='Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', data='null', relatedNodes='[]'}]', all='[]', none='[]'}, CheckedNode{target='[#ape_Gateway_right-7_desktop_iframe]', html='&lt;iframe name=&quot;{&amp;quot;slot&amp;quot;:&amp;quot;Gateway_right-7_desktop&amp;quot;,&amp;quot;pageType&amp;quot;:&amp;quot;Gateway&amp;quot;,&amp;quot;subPageType&amp;quot;:&amp;quot;desktop&amp;quot;,&amp;quot;slotName&amp;quot;:&amp;quot;right-7&amp;quot;,&amp;quot;src&amp;quot;:&amp;quot;https://aax-us-east-retail-direct.amazon.com/e/xsp/getAd?placementId=a141b4aa-72dc-40d9-9a10-31068a28da3f&amp;amp;src=500&amp;amp;slot=right-7&amp;amp;rid=01015e9742e8d0c09b739c00fd1a36a18a677aa0525604401f0350195e85c57c816b&amp;amp;rj=%7B%7D&amp;quot;,&amp;quot;adServer&amp;quot;:&amp;quot;cs&amp;quot;,&amp;quot;arid&amp;quot;:&amp;quot;f321ef37a4bf4eacb6d3988d8cd647ab&amp;quot;,&amp;quot;placementId&amp;quot;:&amp;quot;a141b4aa-72dc-40d9-9a10-31068a28da3f&amp;quot;,&amp;quot;size&amp;quot;:{&amp;quot;width&amp;quot;:&amp;quot;300&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;250&amp;quot;},&amp;quot;allowedSizes&amp;quot;:[{&amp;quot;width&amp;quot;:&amp;quot;300px&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;250px&amp;quot;},{&amp;quot;width&amp;quot;:&amp;quot;300&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;250&amp;quot;}],&amp;quot;allowChangeSize&amp;quot;:true,&amp;quot;allowedDomains&amp;quot;:[&amp;quot;g-ecx.images-amazon.com&amp;quot;,&amp;quot;d3l3lkinz3f56t.cloudfront.net&amp;quot;,&amp;quot;g-ecx.images-amazon.com&amp;quot;,&amp;quot;z-ecx.images-amazon.com&amp;quot;,&amp;quot;images-na.ssl-images-amazon.com&amp;quot;,&amp;quot;g-ec4.images-amazon.com&amp;quot;,&amp;quot;images-cn.ssl-images-amazon.com&amp;quot;],&amp;quot;loadAfter&amp;quot;:&amp;quot;amznJQ.onCompletion:amznJQ.criticalFeature:gwLayoutReady&amp;quot;,&amp;quot;firePixelsAfter&amp;quot;:&amp;quot;immediate&amp;quot;,&amp;quot;extraDelay&amp;quot;:0,&amp;quot;iframeExtraStyle&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;iframeClass&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;isCardsFlow&amp;quot;:false,&amp;quot;adPixels&amp;quot;:[],&amp;quot;aaxInstrPixelUrl&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;serverSideFetchAd&amp;quot;:&amp;quot;false&amp;quot;,&amp;quot;enableAdBlockerDetector&amp;quot;:false,&amp;quot;disableResizeFunc&amp;quot;:true,&amp;quot;minWidthToScale&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;fallbackStaticAdImgUrl&amp;quot;:&amp;quot;https://m.media-amazon.com/images/G/01/GiftCards/Consumer/multi-product/House/2022_fallback_HouseAds_300x250_EN.jpg&amp;quot;,&amp;quot;fallbackStaticAdClickUrl&amp;quot;:&amp;quot;https://www.amazon.com/s?i=gift-cards&amp;amp;bbn=2238192011&amp;amp;rh=n%3A2238192011%2Cp_n_format_browse-bin%3A2740967011%2Cp_89%3AAmazon&amp;amp;pf_rd_i=2238192011&amp;amp;pf_rd_m=ATVPDKIKX0DER&amp;amp;pf_rd_p=46e3aae6-bd43-4f0d-8704-b683a13e1a75&amp;amp;pf_rd_r=HDT9HKQBFJP037XW18S6&amp;amp;pf_rd_s=merchandised-search-5&amp;amp;pf_rd_t=101&amp;amp;ref=s9_acss_bw_cg_gclptcg_2b1_w&amp;quot;,&amp;quot;fallbackStaticAdExtraStyle&amp;quot;:&amp;quot;width=100% height=auto alt=\&amp;quot;GiftCards/Consumer/multi-product/House/2022_fallback_HouseAds_300x250_EN\&amp;quot;&amp;quot;,&amp;quot;adFeedbackInfo&amp;quot;:{&amp;quot;adProgramId&amp;quot;:&amp;quot;1001&amp;quot;,&amp;quot;endPoint&amp;quot;:&amp;quot;/af/feedback-link&amp;quot;,&amp;quot;boolFeedback&amp;quot;:true,&amp;quot;sponsoredText&amp;quot;:&amp;quot;U3BvbnNvcmVkIDxiIGlkPSJhcGVfR2F0ZXdheV9yaWdodC03X2Rlc2t0b3BfZmVlZGJhY2tJY29uIiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyB2ZXJ0aWNhbC1hbGlnbjogdGV4dC1ib3R0b207IG1hcmdpbjogMXB4IDBweDsgd2lkdGg6IDE0cHg7IGhlaWdodDogMTJweDsgYmFja2dyb3VuZDogdXJsKCdodHRwczovL20ubWVkaWEtYW1hem9uLmNvbS9pbWFnZXMvRy8wMS9hZC1mZWVkYmFjay9pbmZvX2ljb25fMVhzcHJpdGUucG5nJykgMHB4IDBweCBuby1yZXBlYXQgc2Nyb2xsIHRyYW5zcGFyZW50OyIvPg==&amp;quot;,&amp;quot;adFeedbackOnTop&amp;quot;:false},&amp;quot;adPlacementMetaData&amp;quot;:{&amp;quot;pageUrl&amp;quot;:&amp;quot;aHR0cHM6Ly93d3cuYW1hem9uLmNvbS8/&amp;quot;,&amp;quot;adElementId&amp;quot;:&amp;quot;ape_Gateway_right-7_desktop_placement&amp;quot;,&amp;quot;pageType&amp;quot;:&amp;quot;Gateway&amp;quot;,&amp;quot;slotName&amp;quot;:&amp;quot;right-7&amp;quot;},&amp;quot;adCreativeMetaData&amp;quot;:{&amp;quot;adProgramId&amp;quot;:&amp;quot;1001&amp;quot;,&amp;quot;adCreativeId&amp;quot;:&amp;quot;592695619112583404&amp;quot;,&amp;quot;adId&amp;quot;:&amp;quot;591366236047358967&amp;quot;,&amp;quot;adCreativeDetails&amp;quot;:[{&amp;quot;version&amp;quot;:1,&amp;quot;advertiserIdNS&amp;quot;:&amp;quot;cs.A3EO6W5EXWT5VN&amp;quot;,&amp;quot;campaignIdNS&amp;quot;:&amp;quot;cs.A10185783AFR2I11YCK6F&amp;quot;,&amp;quot;selectionSignals&amp;quot;:{&amp;quot;context&amp;quot;:true,&amp;quot;location&amp;quot;:true,&amp;quot;pastActivity&amp;quot;:&amp;quot;AMAZON_AND_OTHER&amp;quot;}}],&amp;quot;adNetwork&amp;quot;:&amp;quot;cs&amp;quot;},&amp;quot;advertisementStyle&amp;quot;:{&amp;quot;position&amp;quot;:&amp;quot;absolute&amp;quot;,&amp;quot;top&amp;quot;:&amp;quot;4.5px&amp;quot;,&amp;quot;right&amp;quot;:&amp;quot;0px&amp;quot;,&amp;quot;display&amp;quot;:&amp;quot;inline-block&amp;quot;,&amp;quot;font&amp;quot;:&amp;quot;11px \&amp;quot;Amazon Ember Regular\&amp;quot;, \&amp;quot;Amazon Ember\&amp;quot;, Arial&amp;quot;,&amp;quot;color&amp;quot;:&amp;quot;rgb(85,85,85)&amp;quot;,&amp;quot;text-align&amp;quot;:&amp;quot;right&amp;quot;},&amp;quot;feedbackDivStyle&amp;quot;:{&amp;quot;position&amp;quot;:&amp;quot;relative&amp;quot;,&amp;quot;height&amp;quot;:&amp;quot;20px&amp;quot;,&amp;quot;top&amp;quot;:&amp;quot;2px&amp;quot;},&amp;quot;viewabilityStandards&amp;quot;:[{&amp;quot;p&amp;quot;:0,&amp;quot;t&amp;quot;:0,&amp;quot;def&amp;quot;:&amp;quot;amzn&amp;quot;},{&amp;quot;p&amp;quot;:50,&amp;quot;t&amp;quot;:1,&amp;quot;def&amp;quot;:&amp;quot;iab&amp;quot;},{&amp;quot;p&amp;quot;:100,&amp;quot;t&amp;quot;:1,&amp;quot;def&amp;quot;:&amp;quot;groupm&amp;quot;}],&amp;quot;ajaxWeblabTriggerId&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;abpStatus&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;abpAcceptable&amp;quot;:&amp;quot;true&amp;quot;,&amp;quot;disableAdReporterSlot&amp;quot;:&amp;quot;false&amp;quot;,&amp;quot;mediaType&amp;quot;:&amp;quot;D&amp;quot;,&amp;quot;allowlistedCustomMessageEvents&amp;quot;:[&amp;quot;openPsAdPopover&amp;quot;,&amp;quot;openATCModal&amp;quot;,&amp;quot;setPartner&amp;quot;,&amp;quot;sendMetrics&amp;quot;,&amp;quot;wrap&amp;quot;],&amp;quot;allowlistedQueryParamKeys&amp;quot;:[&amp;quot;sf-overrideVariationId&amp;quot;,&amp;quot;sf-overridePredictorId&amp;quot;,&amp;quot;sf-forceFailure&amp;quot;],&amp;quot;DAsfUrl&amp;quot;:&amp;quot;https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/DAsf-1.50.8f4f9653.js&amp;quot;,&amp;quot;weblabTreatments&amp;quot;:{&amp;quot;ADPT_SF_ARIA_HIDDEN_644521&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_CLIENT_LATENCY_2023Q1_632539&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_CLIENT_LATENCY_2023Q3_737747&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_DSA_ENABLE_AD_FEEDBACK_712406&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_EXPANDABLE_ADS_716745&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_JAVELIN_BID_PRESENT_PUNTING_747631&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_JAVELIN_DSA_PUNTING_713928&amp;quot;:&amp;quot;C&amp;quot;,&amp;quot;ADPT_SF_MRC_RETEST_643771&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_DOCWRITE_689243&amp;quot;:&amp;quot;T1&amp;quot;,&amp;quot;ADPT_SF_TRANSPARENCY_INFO_MANDATORY_FOR_EU_712921&amp;quot;:&amp;quot;C&amp;quot;},&amp;quot;hostDomain&amp;quot;:&amp;quot;https://www.amazon.com&amp;quot;,&amp;quot;userAgent&amp;quot;:&amp;quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36&amp;quot;,&amp;quot;isAUIAvailable&amp;quot;:&amp;quot;3.23.1-2023-08-11&amp;quot;,&amp;quot;cookie&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;aPageStart&amp;quot;:1692084838556,&amp;quot;adStartTime&amp;quot;:1692084841258,&amp;quot;queryParams&amp;quot;:{},&amp;quot;userConnectionInfo&amp;quot;:{&amp;quot;mobileConnectionType&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;connectionType&amp;quot;:&amp;quot;4g&amp;quot;},&amp;quot;safeFrameSrc&amp;quot;:&amp;quot;https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/sf-1.50.293ce66e.html&amp;quot;}&quot; id=&quot;ape_Gateway_right-7_desktop_iframe&quot; height=&quot;250px&quot; width=&quot;300px&quot; class=&quot;&quot; frameborder=&quot;0&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;no&quot; allowtransparency=&quot;true&quot; data-arid=&quot;f321ef37a4bf4eacb6d3988d8cd647ab&quot; src=&quot;https://images-na.ssl-images-amazon.com/images/S/apesafeframe/ape/sf/desktop/sf-1.50.293ce66e.html&quot; sandbox=&quot;allow-scripts allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-same-origin&quot; style=&quot;&quot;&gt;', impact='serious', failureSummary='Fix any of the following:
+  Element has no title attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', any='[CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='presentational-role', impact='minor', message='Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', data='null', relatedNodes='[]'}]', all='[]', none='[]'}], url='null', createdDate='null'}, Rule{id='image-alt', description='Ensures &lt;img&gt; elements have alternate text or a role of none or presentation', help='Images must have alternate text', helpUrl='https://dequeuniversity.com/rules/axe/4.7/image-alt?application=PlaywrightJava', impact='critical', tags=[cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, ACT, TTv5, TT7.a, TT7.b], nodes=[CheckedNode{target='[.ad-background-image]', html='&lt;img class=&quot;ad-background-image mrc-btr-creative&quot; src=&quot;https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/de8f8bab-a6f7-48df-8485-d309c495663d.png&quot; style=&quot;max-width:none;max-height:none;width:100%;height:auto;margin-left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)&quot;&gt;', impact='critical', failureSummary='Fix any of the following:
+  Element does not have an alt attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', any='[CheckedNode{id='has-alt', impact='critical', message='Element does not have an alt attribute', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}, CheckedNode{id='presentational-role', impact='minor', message='Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', data='null', relatedNodes='[]'}]', all='[]', none='[]'}, CheckedNode{target='[#ape_Gateway_desktop-ad-center-1_desktop_iframe, .ad-background-image]', html='&lt;img class=&quot;ad-background-image mrc-btr-creative&quot; src=&quot;https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/f77c7138-5731-4212-9d4c-b922a9ccc55e.jpg&quot; style=&quot;max-width:none;max-height:none;width:100%;height:auto;margin-left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)&quot;&gt;', impact='critical', failureSummary='Fix any of the following:
+  Element does not have an alt attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', any='[CheckedNode{id='has-alt', impact='critical', message='Element does not have an alt attribute', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}, CheckedNode{id='presentational-role', impact='minor', message='Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', data='null', relatedNodes='[]'}]', all='[]', none='[]'}, CheckedNode{target='[#ape_Gateway_right-7_desktop_iframe, .ad-background-image]', html='&lt;img class=&quot;ad-background-image mrc-btr-creative&quot; src=&quot;https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ccf0ab73-ffa5-403d-b3aa-ed217e7084da.jpg&quot; style=&quot;max-width:none;max-height:none;width:100%;height:auto;margin-left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)&quot;&gt;', impact='critical', failureSummary='Fix any of the following:
+  Element does not have an alt attribute
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', any='[CheckedNode{id='has-alt', impact='critical', message='Element does not have an alt attribute', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}, CheckedNode{id='presentational-role', impact='minor', message='Element's default semantics were not overridden with role=&quot;none&quot; or role=&quot;presentation&quot;', data='null', relatedNodes='[]'}]', all='[]', none='[]'}], url='null', createdDate='null'}, Rule{id='link-in-text-block', description='Ensure links are distinguished from surrounding text in a way that does not rely on color', help='Links must be distinguishable without relying on color', helpUrl='https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=PlaywrightJava', impact='serious', tags=[cat.color, wcag2a, wcag141, TTv5, TT13.a], nodes=[CheckedNode{target='[.nav-signin-tooltip-footer &gt; .nav-a]', html='&lt;a href=&quot;https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&amp;amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&amp;amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;amp;openid.assoc_handle=usflex&amp;amp;openid.mode=checkid_setup&amp;amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&quot; class=&quot;nav-a&quot;&gt;', impact='serious', failureSummary='Fix any of the following:
+  The link has insufficient color contrast of 1.73:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0055aa, surrounding text: #333333)
+  The link has no styling (such as underline) to distinguish it from the surrounding text', any='[CheckedNode{id='link-in-text-block', impact='serious', message='The link has insufficient color contrast of 1.73:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0055aa, surrounding text: #333333)', data='{messageKey=fgContrast, contrastRatio=1.73, requiredContrastRatio=3, nodeColor=#0055aa, parentColor=#333333}', relatedNodes='[Node{target='[.nav-signin-tooltip-footer]', html='&lt;div class=&quot;nav-signin-tooltip-footer&quot;&gt;'}]'}, CheckedNode{id='link-in-text-block-style', impact='serious', message='The link has no styling (such as underline) to distinguish it from the surrounding text', data='null', relatedNodes='[Node{target='[.nav-signin-tooltip-footer]', html='&lt;div class=&quot;nav-signin-tooltip-footer&quot;&gt;'}]'}]', all='[]', none='[]'}], url='null', createdDate='null'}, Rule{id='link-name', description='Ensures links have discernible text', help='Links must have discernible text', helpUrl='https://dequeuniversity.com/rules/axe/4.7/link-name?application=PlaywrightJava', impact='serious', tags=[cat.name-role-value, wcag2a, wcag412, wcag244, section508, section508.22.a, ACT, TTv5, TT6.a], nodes=[CheckedNode{target='[.clickthrough]', html='&lt;a style=&quot;cursor:pointer;display:block&quot; class=&quot;clickthrough&quot; href=&quot;https://www.amazon.com/b?aaxitk=181eed47fae4a7603e7c250a03ba4f1b&amp;amp;node=116623491011&amp;amp;ref_=appstore_adclick4&quot; target=&quot;_top&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}, CheckedNode{target='[#ape_Gateway_desktop-ad-center-1_desktop_iframe, a]', html='&lt;a style=&quot;position:absolute;top:0;right:0;bottom:0;left:0;cursor:pointer;background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=) repeat 0 0&quot; class=&quot;clickthrough&quot; href=&quot;https://www.amazon.com/auto-deliveries/landing?aaxitk=b02c7bebb2bbcd015ffac2357b5d8491&amp;amp;ref_=sns_ha&quot; target=&quot;_top&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}, CheckedNode{target='[.image-1 &gt; .center-image.aok-block.a-link-normal]', html='&lt;a class=&quot;a-link-normal center-image aok-block&quot; href=&quot;/Nestle-Nespresso-Variety-OriginalLine-Capsules/dp/B0099HD3YA/?_encoding=UTF8&amp;amp;pd_rd_w=UJZam&amp;amp;content-id=amzn1.sym.cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_p=cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_r=DPKXR6QY9MW5AWX5SBRT&amp;amp;pd_rd_wg=pS648&amp;amp;pd_rd_r=6fe6829c-c29f-4b46-b05a-54da67a2f103&amp;amp;ref_=pd_gw_trq_ed_f2b5nyoo&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}, CheckedNode{target='[.image-2 &gt; .center-image.aok-block.a-link-normal]', html='&lt;a class=&quot;a-link-normal center-image aok-block&quot; href=&quot;/Nestle-Nespresso-Variety-OriginalLine-Capsules/dp/B0099HD3YA/?_encoding=UTF8&amp;amp;pd_rd_w=UJZam&amp;amp;content-id=amzn1.sym.cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_p=cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_r=DPKXR6QY9MW5AWX5SBRT&amp;amp;pd_rd_wg=pS648&amp;amp;pd_rd_r=6fe6829c-c29f-4b46-b05a-54da67a2f103&amp;amp;ref_=pd_gw_trq_ed_f2b5nyoo&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}, CheckedNode{target='[.image-3 &gt; .center-image.aok-block.a-link-normal]', html='&lt;a class=&quot;a-link-normal center-image aok-block&quot; href=&quot;/Nestle-Nespresso-Variety-OriginalLine-Capsules/dp/B0099HD3YA/?_encoding=UTF8&amp;amp;pd_rd_w=UJZam&amp;amp;content-id=amzn1.sym.cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_p=cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_r=DPKXR6QY9MW5AWX5SBRT&amp;amp;pd_rd_wg=pS648&amp;amp;pd_rd_r=6fe6829c-c29f-4b46-b05a-54da67a2f103&amp;amp;ref_=pd_gw_trq_ed_f2b5nyoo&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}, CheckedNode{target='[.image-4 &gt; .center-image.aok-block.a-link-normal]', html='&lt;a class=&quot;a-link-normal center-image aok-block&quot; href=&quot;/Nestle-Nespresso-Variety-OriginalLine-Capsules/dp/B0099HD3YA/?_encoding=UTF8&amp;amp;pd_rd_w=UJZam&amp;amp;content-id=amzn1.sym.cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_p=cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_r=DPKXR6QY9MW5AWX5SBRT&amp;amp;pd_rd_wg=pS648&amp;amp;pd_rd_r=6fe6829c-c29f-4b46-b05a-54da67a2f103&amp;amp;ref_=pd_gw_trq_ed_f2b5nyoo&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}, CheckedNode{target='[.image-5 &gt; .center-image.aok-block.a-link-normal]', html='&lt;a class=&quot;a-link-normal center-image aok-block&quot; href=&quot;/Nestle-Nespresso-Variety-OriginalLine-Capsules/dp/B0099HD3YA/?_encoding=UTF8&amp;amp;pd_rd_w=UJZam&amp;amp;content-id=amzn1.sym.cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_p=cd7f0fde-48a5-40ba-8681-734f006efed1&amp;amp;pf_rd_r=DPKXR6QY9MW5AWX5SBRT&amp;amp;pd_rd_wg=pS648&amp;amp;pd_rd_r=6fe6829c-c29f-4b46-b05a-54da67a2f103&amp;amp;ref_=pd_gw_trq_ed_f2b5nyoo&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}, CheckedNode{target='[#ape_Gateway_right-7_desktop_iframe, a]', html='&lt;a style=&quot;position:absolute;top:0;right:0;bottom:0;left:0;cursor:pointer;background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=) repeat 0 0&quot; class=&quot;clickthrough&quot; href=&quot;https://www.amazon.com/Old-Gael-Garcia-Bernal/dp/B09HP8MB9G/ref=sr_1_1?aaxitk=dd81b69845eb98d574de908627d36f13&amp;amp;crid=1BADKN1QGKN1B&amp;amp;keywords=Old&amp;amp;qid=1690262642&amp;amp;s=instant-video&amp;amp;sprefix=old+%2Cinstant-video%2C369&amp;amp;sr=1-1&quot; target=&quot;_top&quot;&gt;', impact='serious', failureSummary='Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute', any='[CheckedNode{id='has-visible-text', impact='minor', message='Element does not have text that is visible to screen readers', data='null', relatedNodes='[]'}, CheckedNode{id='aria-label', impact='serious', message='aria-label attribute does not exist or is empty', data='null', relatedNodes='[]'}, CheckedNode{id='aria-labelledby', impact='serious', message='aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty', data='null', relatedNodes='[]'}, CheckedNode{id='non-empty-title', impact='serious', message='Element has no title attribute', data='{messageKey=noAttr}', relatedNodes='[]'}]', all='[]', none='[CheckedNode{id='focusable-no-name', impact='serious', message='Element is in tab order and does not have accessible text', data='null', relatedNodes='[]'}]'}], url='null', createdDate='null'}]&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)
+	at app//pages.HomePage.accessbilityTesting(HomePage.java:58)
+	at app//Test.AmazonPageCheck.accessbilityTesting(AmazonPageCheck.java:34)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.api.extension.InvocationInterceptor.interceptTestMethod(InvocationInterceptor.java:118)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.compute(ForkJoinPoolHierarchicalTestExecutorService.java:202)
+	at java.base@11.0.13/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)
+	at java.base@11.0.13/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base@11.0.13/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base@11.0.13/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base@11.0.13/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base@11.0.13/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">accessbilityTesting()</td>
+<td class="failures">1m46.81s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testWhetherAmazonIsDisplayed1()</td>
+<td class="success">2m18.58s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWhetherAmazonIsDisplayed2()</td>
+<td class="success">1m15.03s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Time taken: 4636 milliseconds
+Time taken: 3753 milliseconds
+Time taken: 4643 milliseconds
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at Aug 15, 2023, 2:35:49 AM</p>
+</div>
+</div>
+</body>
+</html>
