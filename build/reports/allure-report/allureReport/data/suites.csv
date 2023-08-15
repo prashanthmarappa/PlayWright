@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Tue Aug 15 02:33:30 CDT 2023","Tue Aug 15 02:35:17 CDT 2023","106803","","Test.AmazonPageCheck","","Test.AmazonPageCheck","accessbilityTesting","accessbilityTesting()","Some detailed test description3"
-"passed","Tue Aug 15 02:33:30 CDT 2023","Tue Aug 15 02:34:45 CDT 2023","74916","","Test.AmazonPageCheck","","Test.AmazonPageCheck","testWhetherAmazonIsDisplayed2","testWhetherAmazonIsDisplayed2()","Some detailed test description1"
-"passed","Tue Aug 15 02:33:30 CDT 2023","Tue Aug 15 02:35:49 CDT 2023","138563","","Test.AmazonPageCheck","","Test.AmazonPageCheck","testWhetherAmazonIsDisplayed1","testWhetherAmazonIsDisplayed1()","Some detailed test description"
