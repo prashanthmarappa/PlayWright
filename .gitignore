@@ -2,3 +2,4 @@
 /allure-results/
 /.gradle/
 /.idea/
+*trace.zip
